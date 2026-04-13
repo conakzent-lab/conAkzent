@@ -1,209 +1,224 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2868
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alemán con Isabella | Bauhaus Edition</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="es">\
-<head>\
-<meta charset="UTF-8">\
-<meta name="viewport" content="width=device-width, initial-scale=1.0">\
-<title>Alem\'e1n con Isabella</title>\
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">\
-<style>\
-*, *::before, *::after \{ box-sizing: border-box; margin: 0; padding: 0; \}\
-\
-/* PALETA BAUHAUS EXPOSICI\'d3N 1919 */\
-:root \{\
-  --white: #F1EFE7;      /* Blanco hueso / papel antiguo */\
-  --red: #B23B24;        /* Rojo \'f3xido Bauhaus */\
-  --yellow: #EAC15A;     /* Amarillo ocre / dorado */\
-  --blue: #2D3E50;       /* Azul petr\'f3leo */\
-  --blue-dark: #1A2530;  /* Azul casi negro / carb\'f3n */\
-  --gray: #C2C0B8;\
-  --gray-dark: #4A4A4A;\
-\}\
-\
-html \{ scroll-behavior: smooth; \}\
-body \{\
-  font-family: 'IBM Plex Sans', sans-serif;\
-  background: var(--white);\
-  color: var(--blue-dark);\
-  font-weight: 300;\
-  overflow-x: hidden;\
-\}\
-\
-/* NAV */\
-nav \{\
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;\
-  background: var(--blue-dark);\
-  display: flex; align-items: center; justify-content: space-between;\
-  padding: 0 2.5rem; height: 52px;\
-\}\
-.nav-logo \{\
-  font-family: 'Bebas Neue', sans-serif;\
-  font-size: 1.4rem; letter-spacing: 0.15em;\
-  color: var(--white); text-decoration: none;\
-\}\
-.nav-logo span \{ color: var(--yellow); \}\
-.nav-links \{ display: flex; gap: 2rem; list-style: none; \}\
-.nav-links a \{ font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(241,239,231,0.6); text-decoration: none; transition: color 0.2s; \}\
-.nav-links a:hover \{ color: var(--yellow); \}\
-.nav-cta \{\
-  background: var(--red); color: var(--white);\
-  border: none; font-family: 'IBM Plex Sans', sans-serif;\
-  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;\
-  padding: 0.5rem 1.3rem; cursor: pointer; text-decoration: none;\
-\}\
-\
-/* HERO - EDITADO PARA FOTO NO GIGANTE */\
-.hero \{\
-  min-height: 100vh;\
-  background: var(--white);\
-  display: grid; \
-  grid-template-columns: 1.3fr 0.7fr; /* M\'e1s espacio al texto, menos a la foto */\
-  padding-top: 52px;\
-  align-items: center;\
-\}\
-\
-.hero-left \{\
-  padding: 4rem 3rem 4rem 3.5rem;\
-\}\
-\
-.hero-tag \{\
-  display: inline-block;\
-  background: var(--blue); color: var(--white);\
-  font-size: 0.68rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;\
-  padding: 0.3rem 0.75rem; margin-bottom: 2rem;\
-\}\
-\
-.hero-title \{\
-  font-family: 'Bebas Neue', sans-serif;\
-  font-size: clamp(3.5rem, 6vw, 6.5rem);\
-  line-height: 0.92; letter-spacing: 0.04em;\
-  color: var(--blue-dark);\
-  margin-bottom: 2rem;\
-\}\
-.hero-title .red \{ color: var(--red); \}\
-.hero-title .yellow-bg \{\
-  background: var(--yellow);\
-  padding: 0 0.15em;\
-  color: var(--blue-dark);\
-\}\
-\
-.hero-sub \{\
-  font-size: 0.95rem; color: var(--gray-dark);\
-  line-height: 1.8; max-width: 400px;\
-  margin-bottom: 2.5rem;\
-\}\
-\
-/* CONTENEDOR DE FOTO PEQUE\'d1A */\
-.hero-right \{\
-  display: flex;\
-  justify-content: center;\
-  align-items: center;\
-  padding-right: 3.5rem;\
-\}\
-\
-.hero-photo-container \{\
-  position: relative;\
-  width: 300px; /* Ancho controlado */\
-  height: 400px; /* Alto controlado */\
-  border: 4px solid var(--blue-dark);\
-\}\
-\
-.hero-photo \{\
-  width: 100%;\
-  height: 100%;\
-  object-fit: cover;\
-  display: block;\
-\}\
-\
-/* Decoraci\'f3n geom\'e9trica detr\'e1s de la foto */\
-.hero-photo-container::before \{\
-  content: '';\
-  position: absolute;\
-  top: 15px; left: -15px;\
-  width: 100%; height: 100%;\
-  background: var(--yellow);\
-  z-index: -1;\
-\}\
-\
-.btn-red \{ background: var(--red); color: var(--white); padding: 0.8rem 1.6rem; text-decoration: none; text-transform: uppercase; font-size: 0.78rem; font-weight: 500; \}\
-.btn-outline \{ border: 1.5px solid var(--blue); color: var(--blue); padding: 0.8rem 1.6rem; text-decoration: none; text-transform: uppercase; font-size: 0.78rem; margin-left: 10px;\}\
-\
-/* RESTO DE SECCIONES CON NUEVOS COLORES */\
-.stats \{ background: var(--yellow); border-bottom: 5px solid var(--blue-dark); display: grid; grid-template-columns: repeat(3, 1fr); \}\
-.stat \{ padding: 2rem; text-align: center; \}\
-.stat-num \{ color: var(--blue-dark); font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; \}\
-\
-section \{ padding: 5rem 3.5rem; max-width: 1000px; margin: 0 auto; \}\
-.sec-label \{ color: var(--red); font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; \}\
-.sec-label::before \{ content: ''; display: block; width: 24px; height: 3px; background: var(--red); \}\
-.sec-title \{ font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--blue-dark); \}\
-\
-.testimonials-section \{ background: var(--blue-dark); color: var(--white); padding: 5rem 3.5rem; \}\
-.t-card \{ background: var(--blue); padding: 2rem; \}\
-.t-quote \{ color: var(--yellow); font-family: 'Bebas Neue', sans-serif; font-size: 2rem; \}\
-\
-footer \{ background: var(--blue-dark); border-top: 5px solid var(--red); padding: 2rem; color: white; display: flex; justify-content: space-between; \}\
-footer a \{ color: var(--yellow); text-decoration: none; \}\
-\
-@media (max-width: 850px) \{\
-  .hero \{ grid-template-columns: 1fr; text-align: center; \}\
-  .hero-right \{ padding: 3rem 0; \}\
-  .hero-photo-container \{ width: 240px; height: 320px; margin: 0 auto; \}\
-  .hero-sub \{ margin: 0 auto 2.5rem; \}\
-\}\
-</style>\
-</head>\
-<body>\
-\
-<nav>\
-  <a class="nav-logo" href="#">ALEM\'c1N<span>.</span>CON<span>.</span>AKZENT</a>\
-  <ul class="nav-links">\
-    <li><a href="#sobre">Sobre m\'ed</a></li>\
-    <li><a href="#metodo">Metodolog\'eda</a></li>\
-    <li><a href="#niveles">Niveles</a></li>\
-    <li><a href="#testimonios">Rese\'f1as</a></li>\
-  </ul>\
-  <a class="nav-cta" href="#reserva">Reservar clase</a>\
-</nav>\
-\
-<div class="hero">\
-  <div class="hero-left">\
-    <span class="hero-tag">\uc0\u55356 \u56809 \u55356 \u56810  Certificaci\'f3n C2 Goethe-Institut</span>\
-    <h1 class="hero-title">\
-      APRENDE<br>\
-      <span class="red">ALEM\'c1N</span><br>\
-      <span class="yellow-bg">CON SISTEMA.</span>\
-    </h1>\
-    <p class="hero-sub">Clases individuales con enfoque en dise\'f1o funcional del lenguaje. Aprende bajo la disciplina y est\'e9tica que defini\'f3 la modernidad.</p>\
-    <div class="hero-btns">\
-      <a class="btn-red" href="#reserva">Clase de prueba</a>\
-      <a class="btn-outline" href="#sobre">Mi perfil</a>\
-    </div>\
-  </div>\
-  \
-  <div class="hero-right">\
-    <div class="hero-photo-container">\
-      <img class="hero-photo" src="TU_FOTO_BASE64_O_LINK_AQUI" alt="Isabella">\
-    </div>\
-  </div>\
-</div>\
-\
-<div class="stats">\
-  <div class="stat"><span class="stat-num">07+</span><div class="stat-label">A\'f1os de experiencia</div></div>\
-  <div class="stat"><span class="stat-num">100%</span><div class="stat-label">Pasi\'f3n por ense\'f1ar</div></div>\
-  <div class="stat"><span class="stat-num">C2</span><div class="stat-label">Nivel nativo</div></div>\
-</div>\
-\
-<footer>\
-  <span>\'a9 2025 Alem\'e1n con Akzent \'b7 Isabella</span>\
-  <a href="mailto:con.akzent@gmail.com">con.akzent@gmail.com</a>\
-</footer>\
-\
-</body>\
-</html>}
+/* PALETA BAUHAUS EXPOSICIÓN 1919 */
+:root {
+  --white: #F1EFE7;      /* Blanco papel antiguo */
+  --red: #B23B24;        /* Rojo óxido */
+  --yellow: #EAC15A;     /* Amarillo ocre */
+  --blue: #2D3E50;       /* Azul petróleo */
+  --blue-dark: #1A2530;  /* Carbón */
+  --gray: #C2C0B8;
+  --gray-dark: #4A4A4A;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: var(--white);
+  color: var(--blue-dark);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* NAVEGACIÓN */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: var(--blue-dark);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 2rem; height: 55px;
+}
+.nav-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem; letter-spacing: 0.15em;
+  color: var(--white); text-decoration: none;
+}
+.nav-logo span { color: var(--yellow); }
+.nav-links { display: flex; gap: 1.5rem; list-style: none; }
+.nav-links a { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(241,239,231,0.6); text-decoration: none; }
+
+/* HERO - FOTO PEQUEÑA */
+.hero {
+  min-height: 100vh;
+  display: grid; 
+  grid-template-columns: 1.2fr 0.8fr;
+  padding-top: 55px;
+  align-items: center;
+}
+.hero-left { padding: 4rem; }
+.hero-tag {
+  display: inline-block;
+  background: var(--blue); color: var(--white);
+  font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em;
+  padding: 0.4rem 0.8rem; margin-bottom: 1.5rem;
+}
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.95; margin-bottom: 1.5rem;
+}
+.hero-title .red { color: var(--red); }
+.hero-title .yellow-mark { background: var(--yellow); padding: 0 0.1em; }
+
+.hero-right { display: flex; justify-content: center; padding-right: 2rem; }
+.hero-photo-container {
+  position: relative;
+  width: 280px; height: 380px;
+  border: 5px solid var(--blue-dark);
+}
+.hero-photo-container::after {
+  content: ''; position: absolute; top: 15px; left: -15px;
+  width: 100%; height: 100%; background: var(--yellow); z-index: -1;
+}
+.hero-photo { width: 100%; height: 100%; object-fit: cover; background: #ddd; }
+
+/* STATS */
+.stats { background: var(--yellow); display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 5px solid var(--blue-dark); }
+.stat { padding: 2rem; text-align: center; border-right: 1px solid rgba(0,0,0,0.1); }
+.stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; display: block; }
+
+/* SECCIONES */
+section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+.sec-label { color: var(--red); font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.sec-label::before { content: ''; width: 30px; height: 3px; background: var(--red); }
+.sec-title { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; margin-bottom: 2rem; }
+
+/* GRID CARDS */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.card { background: white; padding: 2rem; border: 1px solid var(--gray); border-bottom: 5px solid var(--blue); }
+.card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; margin-bottom: 0.8rem; color: var(--red); }
+
+/* TESTIMONIOS */
+.testimonials { background: var(--blue-dark); color: white; padding: 5rem 2rem; }
+.t-card { background: var(--blue); padding: 2rem; position: relative; }
+.t-quote { color: var(--yellow); font-size: 2.5rem; font-family: 'Bebas Neue', sans-serif; }
+
+/* FORMULARIO */
+.contact-container { background: #EAE8E0; padding: 3rem; border: 2px solid var(--blue-dark); }
+input, select, textarea { 
+  width: 100%; padding: 0.8rem; margin-bottom: 1rem; 
+  background: transparent; border: none; border-bottom: 2px solid var(--blue-dark);
+}
+.btn-submit { background: var(--red); color: white; border: none; padding: 1rem; width: 100%; font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; cursor: pointer; }
+
+footer { background: var(--blue-dark); color: white; padding: 2rem; text-align: center; border-top: 6px solid var(--red); }
+
+@media (max-width: 850px) {
+  .hero { grid-template-columns: 1fr; text-align: center; }
+  .hero-right { padding: 2rem 0; }
+  .hero-left { padding: 2rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="#">ALEMÁN<span>.</span>AKZENT</a>
+  <ul class="nav-links">
+    <li><a href="#metodo">Método</a></li>
+    <li><a href="#niveles">Niveles</a></li>
+    <li><a href="#reserva">Reserva</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="hero-left">
+    <span class="hero-tag">🇩🇪 Goethe-Institut C2 Certified</span>
+    <h1 class="hero-title">ALEMÁN SIN<br><span class="red">MISTERIOS,</span><br><span class="yellow-mark">CON SISTEMA.</span></h1>
+    <p>Clases diseñadas bajo la lógica funcional de la Bauhaus: eliminamos lo innecesario para que hables con confianza.</p>
+  </div>
+  <div class="hero-right">
+    <div class="hero-photo-container">
+      <img src="TU_FOTO_AQUI" alt="Isabella" class="hero-photo">
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat"><span class="stat-num">07+</span>Años experiencia</div>
+  <div class="stat"><span class="stat-num">100%</span>Personalizado</div>
+  <div class="stat"><span class="stat-num">C2</span>Nivel Nativo</div>
+</div>
+
+<section id="metodo">
+  <span class="sec-label">Metodología</span>
+  <h2 class="sec-title">La forma sigue a la función</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>01. Estructura</h3>
+      <p>Dominarás la gramática alemana como si fuera un plano arquitectónico: piezas que encajan perfectamente.</p>
+    </div>
+    <div class="card">
+      <h3>02. Comunicación</h3>
+      <p>Nos enfocamos en el uso real del idioma. Menos relleno, más conversación desde la primera sesión.</p>
+    </div>
+    <div class="card">
+      <h3>03. Adaptabilidad</h3>
+      <p>Cada clase se diseña según tus objetivos específicos: trabajo, exámenes oficiales o mudanza.</p>
+    </div>
+  </div>
+</section>
+
+<section id="niveles">
+  <span class="sec-label">Niveles</span>
+  <h2 class="sec-title">Tu camino al éxito</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>A1 - A2</h3>
+      <p>Cimentación: Las bases sólidas para sobrevivir y entender el entorno alemán.</p>
+    </div>
+    <div class="card">
+      <h3>B1 - B2</h3>
+      <p>Independencia: Comunicación fluida y manejo de situaciones complejas.</p>
+    </div>
+    <div class="card">
+      <h3>C1 - C2</h3>
+      <p>Maestría: Perfeccionamiento del estilo y precisión académica o profesional.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonios" class="testimonials">
+  <span class="sec-label" style="color: var(--yellow);">Testimonios</span>
+  <h2 class="sec-title" style="color: white;">Lo que dicen mis alumnos</h2>
+  <div class="grid">
+    <div class="t-card">
+      <p>“Isabella hace que la gramática alemana parezca fácil. Su método es muy visual y lógico.”</p>
+    </div>
+    <div class="t-card">
+      <p>“Pasé mi examen B2 en tiempo récord gracias a sus clases enfocadas.”</p>
+    </div>
+  </div>
+</section>
+
+<section id="reserva">
+  <div class="contact-container">
+    <span class="sec-label">Contacto</span>
+    <h2 class="sec-title">Reserva tu clase gratis</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <select>
+        <option>Nivel actual: Principiante</option>
+        <option>Nivel actual: Intermedio</option>
+        <option>Nivel actual: Avanzado</option>
+      </select>
+      <textarea placeholder="Cuéntame tu objetivo..." rows="4"></textarea>
+      <button type="submit" class="btn-submit">Enviar Solicitud</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Alemán con Akzent · Isabella</p>
+</footer>
+
+</body>
+</html>
